@@ -1,0 +1,76 @@
+module MiniProject (
+    // Clock
+	input clock,
+	// Global Reset
+	input globalReset,
+	// KEY inputs
+	input key0,
+	input key1,
+	input key2,
+	input key3,
+	// Application Reset for debug
+	output             resetApp,
+
+	// LT24 Interface
+	output             LT24Wr_n,
+	output             LT24Rd_n,
+	output             LT24CS_n,
+	output             LT24RS,
+	output             LT24Reset_n,
+	output [     15:0] LT24Data,
+	output             LT24LCDOn
+	);
+
+
+// Local Variables
+reg  [ 7:0] xAddr;
+reg  [ 8:0] yAddr;
+reg  [15:0] pixelData;
+wire        pixelReady;
+reg         pixelWrite;
+
+// LCD Display
+localparam LCD_WIDTH  = 240;
+localparam LCD_HEIGHT = 320;
+
+LT24Display #(
+    .WIDTH       (LCD_WIDTH  ),
+    .HEIGHT      (LCD_HEIGHT ),
+    .CLOCK_FREQ  (50000000   )
+) Display (
+    //Clock and Reset In
+    .clock       (clock      ),
+    .globalReset (globalReset),
+    //Reset for User Logic
+    .resetApp    (resetApp   ),
+    //Pixel Interface
+    .xAddr       (xAddr      ),
+    .yAddr       (yAddr      ),
+    .pixelData   (pixelData  ),
+    .pixelWrite  (pixelWrite ),
+    .pixelReady  (pixelReady ),
+    //Use pixel addressing mode
+    .pixelRawMode(1'b0       ),
+    //Unused Command Interface
+    .cmdData     (8'b0       ),
+    .cmdWrite    (1'b0       ),
+    .cmdDone     (1'b0       ),
+    .cmdReady    (           ),
+    //Display Connections
+    .LT24Wr_n    (LT24Wr_n   ),
+    .LT24Rd_n    (LT24Rd_n   ),
+    .LT24CS_n    (LT24CS_n   ),
+    .LT24RS      (LT24RS     ),
+    .LT24Reset_n (LT24Reset_n),
+    .LT24Data    (LT24Data   ),
+    .LT24LCDOn   (LT24LCDOn  )
+);
+
+Pong (
+
+
+);
+
+
+
+endmodule 

@@ -1,0 +1,14 @@
+module PongFSM(
+	input clock,
+   input reset,
+   input start,
+	
+	output running,
+	output score0,
+	output score1,
+)
+
+
+
+
+endmodule 

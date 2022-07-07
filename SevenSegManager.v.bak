@@ -1,0 +1,49 @@
+module SevenSegManager (
+	input running,
+	input [3:0] score0,
+	input [3:0] score1,
+	
+	output [6:0] hex2,
+	output [6:0] hex3,
+	output [6:0] hex4,
+	output [6:0] hex5
+)
+
+HexTo7Segment #(
+	INVERT_OUTPUT(1)
+) seg2 (
+
+	input [3:0] hexValue,
+	output [6:0] sevenSeg
+	
+);
+
+HexTo7Segment #(
+	INVERT_OUTPUT(1)
+) seg3 (
+
+	input [3:0] hexValue,
+	output [6:0] sevenSeg
+	
+);
+
+HexTo7Segment #(
+	INVERT_OUTPUT(1)
+) seg4 (
+
+	input [3:0] hexValue,
+	output [6:0] sevenSeg
+	
+);
+
+HexTo7Segment #(
+	INVERT_OUTPUT(1)
+) seg5 (
+
+	input [3:0] hexValue,
+	output [6:0] sevenSeg
+	
+);
+
+
+endmodule 

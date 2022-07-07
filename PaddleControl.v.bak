@@ -1,0 +1,10 @@
+module PaddleControl (
+	input clock,
+	input [7:0] xCount,
+	input [8:0] yCount,
+	input PaddleUp,
+	input PaddleDown,
+	output reg DrawPaddle,
+	output reg [8:0] PaddleY);
+);
+

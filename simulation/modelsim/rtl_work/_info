@@ -1,0 +1,79 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/zabra/Workspace/ELEC5566M-Mini-Project-kamzaaa/simulation/modelsim
+vSevenSegManager
+Z1 !s110 1655409501
+!i10b 1
+!s100 kFPdU7FZQG?ikJZjL7T?52
+Id3:iRIfo?]NX0`ll8McHM2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1655409210
+8C:/Users/zabra/Workspace/ELEC5566M-Mini-Project-kamzaaa/SevenSegManager.v
+FC:/Users/zabra/Workspace/ELEC5566M-Mini-Project-kamzaaa/SevenSegManager.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1655409501.000000
+!s107 C:/Users/zabra/Workspace/ELEC5566M-Mini-Project-kamzaaa/SevenSegManager.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/zabra/Workspace/ELEC5566M-Mini-Project-kamzaaa|C:/Users/zabra/Workspace/ELEC5566M-Mini-Project-kamzaaa/SevenSegManager.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/zabra/Workspace/ELEC5566M-Mini-Project-kamzaaa
+Z7 tCvgOpt 0
+n@seven@seg@manager
+vSevenSegManager_tb
+R1
+!i10b 1
+!s100 i?<YdNoHo5l>6MBSU>LAW0
+Ilkl8<CchE?X:QWA<64nAl2
+R2
+R0
+w1655409451
+8C:/Users/zabra/Workspace/ELEC5566M-Mini-Project-kamzaaa/simulation/SevenSegManager_tb.v
+FC:/Users/zabra/Workspace/ELEC5566M-Mini-Project-kamzaaa/simulation/SevenSegManager_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/zabra/Workspace/ELEC5566M-Mini-Project-kamzaaa/simulation/SevenSegManager_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/zabra/Workspace/ELEC5566M-Mini-Project-kamzaaa/simulation|C:/Users/zabra/Workspace/ELEC5566M-Mini-Project-kamzaaa/simulation/SevenSegManager_tb.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+C:/Users/zabra/Workspace/ELEC5566M-Mini-Project-kamzaaa/simulation
+R7
+n@seven@seg@manager_tb
+vSevenSegment
+R1
+!i10b 1
+!s100 PAIUk=aOSSS1<FhC_CFH61
+IQ=RlHMA[dFK==HH<ZoiJo1
+R2
+R0
+w1655228067
+8C:/Users/zabra/Workspace/ELEC5566M-Mini-Project-kamzaaa/SevenSegment.v
+FC:/Users/zabra/Workspace/ELEC5566M-Mini-Project-kamzaaa/SevenSegment.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/zabra/Workspace/ELEC5566M-Mini-Project-kamzaaa/SevenSegment.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/zabra/Workspace/ELEC5566M-Mini-Project-kamzaaa|C:/Users/zabra/Workspace/ELEC5566M-Mini-Project-kamzaaa/SevenSegment.v|
+!i113 1
+R5
+R6
+R7
+n@seven@segment

@@ -1,0 +1,22 @@
+module BallControl (
+	input clock,
+	input reset,
+	input [7:0] xCount,
+	input [8:0] yCount,
+	
+	output reg drawBall,
+   output reg [5:0] ballX = 0,
+   output reg [5:0] ballY = 0
+);
+
+parameter WIDTH = 240;
+parameter HEIGHT = 320;
+//parameter SIZE = 10;
+
+//ball speed, at clock = 50Mhz the ball will move one pixel unit every 50ms
+//50000000/1000000 = 50
+parameter SPEED = 1000000;
+
+
+
+endmodule 
